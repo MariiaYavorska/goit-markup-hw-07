@@ -1,0 +1,31 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: var(--text-color-black);
+}
+img {
+	display: block;
+}
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--text-color-grey);
+	background-color: var(--text-color-white);
+}
