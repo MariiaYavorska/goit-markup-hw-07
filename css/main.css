@@ -973,6 +973,7 @@ body {
 .footer-form__button:hover, .footer-form__button:focus {
   background-color: #188CE8;
 }
+
 .footer-form__icon {
   margin-left: 10px;
   fill: var(--text-color-white);
