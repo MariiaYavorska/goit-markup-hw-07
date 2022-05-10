@@ -1,7 +1,5 @@
 .social{
-	display: flex;
-	justify-content: center;
-    align-items: center;
+@include flexCenter;
 
 	&__title {
 		margin-bottom: 20px;
@@ -10,13 +8,11 @@
 		font-size: 14px;
 		line-height: 1.14;
 		text-transform: uppercase;
-		color: var(--text-color-white);	
+		color: $text-color-white;	
 	}	
 
     &__list {
-    display: flex;
-	justify-content: center;
-    align-items: center;
+   @include flexCenter;
     }
 
     &__item + &__item {
@@ -28,35 +24,33 @@
 	fill: currentColor;
 
     &--footer {
-	fill: var(--text-color-white)
+	fill: $text-color-white;
     }
 }
 
 .social__link {
-	display: flex;
+	@include flexCenter;
 	width: 44px;
 	height: 44px;
-	justify-content: center;
-	align-items: center;
     border-radius: 50%;	
 
     &:hover,
     &:focus {
-        color: var(--text-color-white);
-        background-color: var(--accent-color);
+        color: $text-color-white;
+        background-color: $accent-color;
         
     } 
 
     &--team {
-        color: var(--icon-color);
+        color: $icon-color;
     	background-position: center;
 	    background-repeat: no-repeat;
-	    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+	    transition: color 250ms $timing-function, background-color 250ms $timing-function;
 } 
 
     &--footer {
-	    background: var(--background-color-social-link-footer);
-    	transition: background-color 250ms var(--timing-function);
+	    background: $background-color-social-link-footer;
+    	transition: background-color 250ms $timing-function;
   }
 
  } 
