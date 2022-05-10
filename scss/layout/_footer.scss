@@ -3,8 +3,7 @@
 	background-color: $background-color-gray;
 
 	&__container {
-		display: flex;
-		align-items: baseline;
+		@include flexCenter ($cross-axis: baseline);
 	  }
 	&__contact-link {
 		margin-top: 0;
