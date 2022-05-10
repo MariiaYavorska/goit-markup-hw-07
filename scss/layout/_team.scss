@@ -1,5 +1,5 @@
 .team {
-	background-color: var(--background-color-bottom);
+	background-color: $background-color-bottom;
 
     &__list {
         display: flex;
@@ -9,7 +9,7 @@
         margin-top: 0;
         text-align: center;
         width: 270px;
-        background-color: var(--text-color-white);
+        background-color: $text-color-white;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
     }
@@ -34,7 +34,7 @@
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
-        color: var(--text-color-black);
+        color: $text-color-black;
     }
 
     &__position {
