@@ -1,15 +1,13 @@
 .header {
-	border-bottom: solid 1px var(--border-color);
+	border-bottom: solid 1px $border-color;
 
 &__container {
-	display: flex;
-	align-items: center;
+@include flexCenter;
 }
 }
 
 .navigation {
-	display: flex;
-	align-items: center;
+	@include flexCenter;
 
 &__logo {
 	margin-top: 24px;
@@ -19,7 +17,7 @@
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
-	color: var(--accent-color);
+	color: $accent-color;
 }
 
 &__list {
@@ -40,8 +38,8 @@
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	color: var(--text-color-black);
-	transition: color 250ms var(--timing-function);
+	color: $text-color-black;
+	transition: color 250ms $timing-function;
 
 &--current {
 	position: relative;
@@ -52,8 +50,8 @@
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	color: var(--accent-color);
-	transition: color 250ms var(--timing-function);
+	color: $accent-color;
+	transition: color 250ms $timing-function;
 }
 &--current::after {
 	position: absolute;
@@ -64,26 +62,24 @@
 	height: 4px;
 	width: 100%;
 	border-radius: 2px;
-	background-color: var(--accent-color);
+	background-color: $accent-color;
 	opacity: 1;
   }
   &:hover,
   &:focus, 
   &--current:hover,
   &--current:focus {
-	color: var(--accent-color);
+	color: $accent-color;
 	cursor: pointer;
 }
 }
 
 .contacts {
 	margin-left: auto;
-	display: flex;
-	align-items: center;
+@include flexCenter;
 
 &__list {
-	display: flex;
-	align-items: center;
+@include flexCenter;
 }
 &__list + &__list {
 	margin-left: 50px;
@@ -91,27 +87,26 @@
 &__icon {
 	fill: currentColor;
 	margin-right: 10px;
-	transition: fill 250ms var(--timing-function);
+	transition: fill 250ms $timing-function;
 }
 
 &__icon:hover {
-	fill: var(--accent-color);
+	fill: $accent-color;
 }
 &__link {
-	display: flex;
-	align-items: center;
+	@include flexCenter;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	color: var(--text-color-grey);
-	transition: color 250ms var(--timing-function);
+	color: $text-color-grey;
+	transition: color 250ms $timing-function;
 }
 &__link:hover,
 &__link:focus {
-	color: var(--accent-color);
+	color: $accent-color;
 }
 
 }
