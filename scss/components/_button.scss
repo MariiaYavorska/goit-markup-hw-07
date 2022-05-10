@@ -3,6 +3,6 @@
 	cursor: pointer;
 
 	&:hover, &:focus {
-		background-color: #188CE8;
+		background-color: $background-color-button;
 	}
 }
