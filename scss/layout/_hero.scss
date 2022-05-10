@@ -4,7 +4,7 @@
 	text-align: center;
 	max-width: 1600px;
 	min-height: 600px;
-	background-color: var(--background-color-gray);
+	background-color: $background-color-gray;
 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 		url(../images/background-photo.jpg);
 
@@ -17,7 +17,7 @@
        line-height: 1.36;
        letter-spacing: 0.06em;
        text-transform: uppercase;
-       color: var(--text-color-white);
+       color: $text-color-white;
     }
 
     &__button {
