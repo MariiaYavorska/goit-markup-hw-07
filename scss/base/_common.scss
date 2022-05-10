@@ -15,7 +15,7 @@ ul {
 }
 a {
 	text-decoration: none;
-	color: var(--text-color-black);
+	color: $text-color-black;
 }
 img {
 	display: block;
@@ -26,6 +26,6 @@ body {
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
-	color: var(--text-color-grey);
-	background-color: var(--text-color-white);
+	color: $text-color-grey;
+	background-color: $text-color-white;
 }
