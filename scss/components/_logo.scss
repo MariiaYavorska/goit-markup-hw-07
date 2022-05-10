@@ -3,13 +3,13 @@
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
-	color: var(--accent-color);
+	color: $accent-color;
 }
 
 .logo__text {
-	color: var(--text-color-black-logo);
+	color: $text-color-black-logo;
 
 &--white {
-	color: var(--text-color-white);
+	color: $text-color-white;
 }
 }
