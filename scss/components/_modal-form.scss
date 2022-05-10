@@ -8,15 +8,13 @@
         font-weight: 700;
         font-size: 20px;
         letter-spacing: 0.03em;
-        color: var(--text-color-black);
+        color: $text-color-black;
         line-height: 1.15;
         margin-bottom: 12px;
       } 
     &__button {
         @extend %button;
-        display: inline-flex;
-        align-items: center;
-        text-align: center;
+        @include flexCenter (inline-flex);
         margin: auto;
         padding: 10px 55px;
       }
@@ -41,12 +39,12 @@
         padding-left: 42px;
 	      border: 1px solid rgba(33, 33, 33, 0.2);
 	      border-radius: 4px;
-	      transition: border-color 250ms var(--timing-function);
+	      transition: border-color 250ms $timing-function;
        	outline: none;
       }
     &__input:focus {
 	      cursor: pointer;
-	      border-color: var(--accent-color);
+	      border-color: $accent-color;
 	      outline: none;
       }
     &__icon {
@@ -55,12 +53,12 @@
 	      left: 12px;
 	      top: 50%;
 	      transform: translateY(-50%);
-      	fill: var(--text-color-black);
-       	transition: fill 250ms var(--timing-function);
+      	fill: $text-color-black;
+       	transition: fill 250ms $timing-function;
        }
 
      &__input:focus + &__icon {
-      	fill: var(--accent-color);
+      	fill: $accent-color;
        }
      &__comment {
        	margin-bottom: 20px;
@@ -77,47 +75,44 @@
        }
 
      &__checkbox-label {
-      	display: flex;
-       	align-items: center;
-      	justify-content: center;
+       @include flexCenter;
       	line-height: 1.71;
       	letter-spacing: 0.03em;
        	margin-bottom: 30px;
        } 
 
      &__checked {
-      	display: flex;
-      	align-items: center;
-      	justify-content: center;
+      	@include flexCenter;
       	margin-right: 7px;
       	width: 16px;
        	height: 15px;
 	      border-radius: 2px;
-      	border: 2px solid var(--text-color-black);
-        transition: border-color 250ms var(--timing-function),
-	      background-color 250ms var(--timing-function);
+      	border: 2px solid $text-color-black;
+        transition: border-color 250ms $timing-function,
+	      background-color 250ms $timing-function;
        }
      &__icon-checked {
       	fill: transparent
        }
      &__checkbox-input:checked + &__checkbox-label span {
       	background-size: contain;
-      	border-color: var(--accent-color);
-      	background-color: var(--accent-color);
+      	border-color: $accent-color;
+      	background-color: $accent-color;
        }  
      &__checkbox-input:focus-within + &__checkbox-label span {
        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
        }
      &__checkbox-input:checked + &__checkbox-label &__icon-checked {
-      fill: var(--text-color-white);
+      fill: $text-color-white;
        }  
      &__checkbox-input:focus-visible + &__icon-checked{
-    	border: 2px solid var(--text-color-black);
+    	border: 2px solid $text-color-black;
       }
 }
 
 .agreement-terms {
-	color: var(--accent-color);
+  margin-left: 4px;
+	color: $accent-color;
 	text-decoration: underline;	
 
     &:hover,
