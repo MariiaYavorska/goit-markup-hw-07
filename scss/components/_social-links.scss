@@ -1,5 +1,5 @@
 .social{
-@include flexCenter;
+@include flexCenter();
 
 	&__title {
 		margin-bottom: 20px;
@@ -12,7 +12,7 @@
 	}	
 
     &__list {
-   @include flexCenter;
+   @include flexCenter();
     }
 
     &__item + &__item {
@@ -29,7 +29,7 @@
 }
 
 .social__link {
-	@include flexCenter;
+	@include flexCenter();
 	width: 44px;
 	height: 44px;
     border-radius: 50%;	
