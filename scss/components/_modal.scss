@@ -17,9 +17,8 @@
   }
 }
  
-
 .modal__button {
-  @include flexCenter;
+  @include flexCenter();
   font-family: 'Roboto', sans-serif;
   position: absolute;
   overflow: hidden;
