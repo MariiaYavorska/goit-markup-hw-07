@@ -75,14 +75,14 @@
        }
 
      &__checkbox-label {
-       @include flexCenter;
+       @include flexCenter();
       	line-height: 1.71;
       	letter-spacing: 0.03em;
        	margin-bottom: 30px;
        } 
 
      &__checked {
-      	@include flexCenter;
+      	@include flexCenter();
       	margin-right: 7px;
       	width: 16px;
        	height: 15px;
