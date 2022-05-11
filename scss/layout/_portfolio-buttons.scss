@@ -2,7 +2,7 @@
 .projects {
 
 &__list {
-	@include flexCenter;
+	@include flexCenter();
 	margin-bottom: 50px;
 	
 }
