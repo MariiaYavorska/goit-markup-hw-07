@@ -12,7 +12,7 @@
 }
 
 .clients__link {
-	@include flexCenter;
+	@include flexCenter();
 	background-position: center;
 	width: 170px;
 	height: 90px;
