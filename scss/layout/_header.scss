@@ -2,12 +2,12 @@
 	border-bottom: solid 1px $border-color;
 
 &__container {
-@include flexCenter;
+@include flexCenter();
 }
 }
 
 .navigation {
-	@include flexCenter;
+	@include flexCenter();
 
 &__logo {
 	margin-top: 24px;
@@ -76,10 +76,10 @@
 
 .contacts {
 	margin-left: auto;
-@include flexCenter;
+@include flexCenter();
 
 &__list {
-@include flexCenter;
+@include flexCenter();
 }
 &__list + &__list {
 	margin-left: 50px;
@@ -94,7 +94,7 @@
 	fill: $accent-color;
 }
 &__link {
-	@include flexCenter;
+	@include flexCenter();
 	padding-top: 32px;
 	padding-bottom: 32px;
 	font-style: normal;
